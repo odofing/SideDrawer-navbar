@@ -1,0 +1,71 @@
+.toolbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgb(102, 66, 19);
+    height: 56px;
+  
+}
+
+.toolbar__navigation {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding: 0 1rem;
+    text-decoration: none;
+}
+
+.toolbar__logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+.toolbar__logo {
+    margin-left: 1rem;
+}
+
+ .toolbar__navigationItem ul{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.align {
+    flex: 1;
+}
+
+.toolbar__navigationItem a {
+    padding: 9px;
+    color: whitesmoke;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+
+.toolbar__navigationItem a:hover,
+.toolbar__navigationItem a:active {
+    color: rgb(155, 136, 113);
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+/* MEDIA QUERY TO REMOVE NAVBAR */
+@media (max-width: 768px) {
+    .toolbar__navigationItem {
+        display: none;
+    }
+}
+
+/* MEDIA QUERY TO REMOVE hamburger button */
+@media (min-width: 768px) {
+    .toolbar__ToggleHide {
+        display: none;
+    }
+    .toolbar__logo {
+        margin-left: 0;
+    }
+}

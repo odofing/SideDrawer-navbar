@@ -1,0 +1,43 @@
+.sideDrawer {
+    height: 100%;
+    background-color: rgb(167, 153, 121);
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 70%;
+    max-width: 230px;
+    z-index: 200;
+    
+}
+
+.sideDrawer ul {
+    list-style: none;
+    margin: 70% 10px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.sideDrawer__Side a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.5); 
+}
+
+.sideDrawer__Side li {
+    padding: 20px;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.sideDrawer__Side li:hover {
+    font-size: 1.8rem;
+    color: saddlebrown;
+}
+
+/* MEDIA QUERY TO hide side-drawer in desktop view */
+@media (min-width: 768px) {
+    .sideDrawer {
+        display: none;
+    }
+}
